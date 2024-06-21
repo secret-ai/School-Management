@@ -258,6 +258,8 @@ header{
     left: 0;
     width: 100%;
     padding: 10px 100px;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #d4d4d4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -265,35 +267,8 @@ header{
 }
 
 img{
-    height: 70px;
     width: 70px;
     border-radius: 15px;
-}
-
-.navigation a{
-    position: relative;
-    font-size: 1.1em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-}
-
-.navigation a::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transform: scale(0);
-    transition: transform .3s;
-}
-
-.navigation a:hover::after{
-    transform: scale(1);
 }
 
 .navigation .btn-logout{
@@ -314,4 +289,40 @@ img{
 .navigation .btn-logout:hover{
     background: #fff;
     color: #2f498e;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    color: #fff;
+}
+
+.sidebar-header h2{
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.sidebar img{
+    width: 30px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 99px;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: #2f498e;
+    border-radius: 10px;
+}
+
+h3{
+    margin-left: 50px;
+}
+
+.sidebar-link .material-symbols-outlined{
+    margin-top: 3px;
+    color: #fff;
+    font-weight: 300;
 }
