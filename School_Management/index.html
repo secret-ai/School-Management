@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="iscp.jpg">
+    <title>School Management</title>
+</head>
+<body>
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="iscp.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+            <div class="form-box login">
+                <h1>Login</h1>
+                <form action="" method="post">
+                    
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <input type="text" name="school_id" id="school_id" autocomplete="off" required>
+                        <label>School ID</label>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input type="password" name="password" id="password" autocomplete="off" required>
+                        <label>Password</label>
+                    </div>
+
+                    <div class="faculty-student">
+                        <label><input type="checkbox">Faculty?</label>
+                        <label><input type="checkbox">Student?</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Login</button>
+
+                    <div class="login-register">
+                        <a href="register.html" class="register-link">Find Account</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
